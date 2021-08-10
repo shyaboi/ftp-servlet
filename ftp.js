@@ -25,7 +25,7 @@ async function download() {
         })
         console.log(await client.list())
         // await client.uploadFrom("README.md", "README_FTP.md")
-        await client.downloadToDir('./testFiles', "/www")
+        await client.downloadToDir('./testFiles', 'www/test')
     }
     catch(err) {
         console.log(err)
